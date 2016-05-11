@@ -50,7 +50,10 @@
     [self.view bringSubviewToFront:bpv];
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
 }
-
+/**
+ * 添加了[_swipeView reloadData];
+ * 页面启动完毕后音库界面刷新，不会开始显示空白
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -61,6 +64,7 @@
     _swipeView.delegate = self;
     _swipeView.dataSource = self;
     _swipeView.wrapEnabled = YES;
+    [_swipeView reloadData];
     [self setupView];
     
 }
@@ -161,8 +165,8 @@
 - (void)updateLineViewFrame:(NSInteger)index {
     CGRect frame = _moveView.frame;
     UIButton *btn = (UIButton *)[self.view viewWithTag:100 + index];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    frame.origin.x = index * ([UIScreen mainScreen].bounds.size.width / 3) + btn.frame.size.width /2 / 4 + 1;
+//    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    frame.origin.x = index * ([UIScreen mainScreen].bounds.size.width / 3) + btn.frame.size.width /6;
     _moveView.frame = frame;
 }
 

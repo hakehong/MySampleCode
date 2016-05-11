@@ -20,13 +20,21 @@
 @end
 
 @implementation MusicTypeViewController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self readMustcTypeData];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //去除tableView的分割线
     self.tableView.separatorStyle =  UITableViewCellSeparatorStyleNone;
     self.dataSourceArray = [NSMutableArray array];
-    [self readMustcTypeData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,7 +113,8 @@
         [model setValuesForKeysWithDictionary:dict];
         [_dataSourceArray addObject:model];
     }
-    [self.tableView reloadData];
+   
+    
 }
 
 

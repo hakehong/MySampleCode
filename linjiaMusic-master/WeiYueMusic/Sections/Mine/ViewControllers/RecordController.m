@@ -83,6 +83,8 @@
         [_dataEntity removeObject:_dataEntity[indexPath.row]];
         [_dataSourceArr removeObject:_dataSourceArr[indexPath.row]];
          [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [[NSNotificationCenter
+          defaultCenter] postNotificationName:@"refresh" object:self];
         //删除后，更新一下bpv的数据源
         bpv.dataSourceArr = _dataSourceArr;
     }

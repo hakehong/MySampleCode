@@ -23,10 +23,18 @@
 @end
 
 @implementation MineController
-
+/**
+ * 添加一个通知，当歌曲移除歌单通知tableview刷新一下数据
+ */
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.tableView reloadData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:@"refsh" object:nil];
+    
+}
+-(void)refsh
+{
+   [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
@@ -117,5 +125,9 @@
         
     }
 }
-
+-(void)dealloc
+{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"refresh" object:nil];
+}
 @end

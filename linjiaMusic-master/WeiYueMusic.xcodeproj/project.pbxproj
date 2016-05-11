@@ -322,12 +322,12 @@
 		C2DD3E7A1B5144080095F81B /* RecommendPosterDefaultImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RecommendPosterDefaultImage.jpg; sourceTree = "<group>"; };
 		C2DD3E861B528ABF0095F81B /* MusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicModel.h; sourceTree = "<group>"; };
 		C2DD3E871B528ABF0095F81B /* MusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicModel.m; sourceTree = "<group>"; };
-		C2DD3E891B529E410095F81B /* NewCDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCDController.h; sourceTree = "<group>"; };
-		C2DD3E8A1B529E410095F81B /* NewCDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCDController.m; sourceTree = "<group>"; };
-		C2DD3E8C1B52A2360095F81B /* NewCDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCDCell.h; sourceTree = "<group>"; };
-		C2DD3E8D1B52A2360095F81B /* NewCDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCDCell.m; sourceTree = "<group>"; };
-		C2DD3E921B52B0C20095F81B /* NewCDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCDModel.h; sourceTree = "<group>"; };
-		C2DD3E931B52B0C20095F81B /* NewCDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCDModel.m; sourceTree = "<group>"; };
+		C2DD3E891B529E410095F81B /* NewCDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCDController.h; path = ../../MusicHot/ViewControllers/NewCDController.h; sourceTree = "<group>"; };
+		C2DD3E8A1B529E410095F81B /* NewCDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCDController.m; path = ../../MusicHot/ViewControllers/NewCDController.m; sourceTree = "<group>"; };
+		C2DD3E8C1B52A2360095F81B /* NewCDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCDCell.h; path = ../../MusicHot/Views/NewCDCell.h; sourceTree = "<group>"; };
+		C2DD3E8D1B52A2360095F81B /* NewCDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCDCell.m; path = ../../MusicHot/Views/NewCDCell.m; sourceTree = "<group>"; };
+		C2DD3E921B52B0C20095F81B /* NewCDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCDModel.h; path = ../../MusicHot/Models/NewCDModel.h; sourceTree = "<group>"; };
+		C2DD3E931B52B0C20095F81B /* NewCDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCDModel.m; path = ../../MusicHot/Models/NewCDModel.m; sourceTree = "<group>"; };
 		C2E42F9F1B4FBD080013A768 /* MusicTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicTypeViewController.h; path = ../../../ViewControllers/MusicTypeViewController.h; sourceTree = "<group>"; };
 		C2E42FA01B4FBD080013A768 /* MusicTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicTypeViewController.m; path = ../../../ViewControllers/MusicTypeViewController.m; sourceTree = "<group>"; };
 		C2E42FB91B4FBEBA0013A768 /* MusicTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTypeCell.h; sourceTree = "<group>"; };
@@ -826,20 +826,9 @@
 				C2D44AF01B57463300B05F69 /* Search */,
 				C2D44AE91B56B97A00B05F69 /* Mine */,
 				C2DD3E821B528AA30095F81B /* MusicPlayer */,
-				C2E42FAD1B4FBDEC0013A768 /* MusicHot */,
 				C2E42FAE1B4FBDEC0013A768 /* MusicType */,
 			);
 			path = Sections;
-			sourceTree = "<group>";
-		};
-		C2E42FAD1B4FBDEC0013A768 /* MusicHot */ = {
-			isa = PBXGroup;
-			children = (
-				C2E42FAF1B4FBDFB0013A768 /* Models */,
-				C2E42FB01B4FBDFB0013A768 /* ViewControllers */,
-				C2E42FB11B4FBDFB0013A768 /* Views */,
-			);
-			path = MusicHot;
 			sourceTree = "<group>";
 		};
 		C2E42FAE1B4FBDEC0013A768 /* MusicType */ = {
@@ -852,36 +841,11 @@
 			path = MusicType;
 			sourceTree = "<group>";
 		};
-		C2E42FAF1B4FBDFB0013A768 /* Models */ = {
+		C2E42FB21B4FBE030013A768 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				C2DD3E921B52B0C20095F81B /* NewCDModel.h */,
 				C2DD3E931B52B0C20095F81B /* NewCDModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C2E42FB01B4FBDFB0013A768 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				C2DD3E891B529E410095F81B /* NewCDController.h */,
-				C2DD3E8A1B529E410095F81B /* NewCDController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		C2E42FB11B4FBDFB0013A768 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C2DD3E8C1B52A2360095F81B /* NewCDCell.h */,
-				C2DD3E8D1B52A2360095F81B /* NewCDCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C2E42FB21B4FBE030013A768 /* Models */ = {
-			isa = PBXGroup;
-			children = (
 				C2E430031B50A4260013A768 /* MusicTypeModel.h */,
 				C2E430041B50A4260013A768 /* MusicTypeModel.m */,
 				C2DBF91F1B536002002E1A2B /* WeekMusicModel.h */,
@@ -899,6 +863,8 @@
 		C2E42FB31B4FBE030013A768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C2DD3E891B529E410095F81B /* NewCDController.h */,
+				C2DD3E8A1B529E410095F81B /* NewCDController.m */,
 				C2E42F9F1B4FBD080013A768 /* MusicTypeViewController.h */,
 				C2E42FA01B4FBD080013A768 /* MusicTypeViewController.m */,
 				C2E430A91B50E7E50013A768 /* MusicWeekController.h */,
@@ -918,6 +884,8 @@
 		C2E42FB41B4FBE030013A768 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2DD3E8C1B52A2360095F81B /* NewCDCell.h */,
+				C2DD3E8D1B52A2360095F81B /* NewCDCell.m */,
 				C2E42FB91B4FBEBA0013A768 /* MusicTypeCell.h */,
 				C2E42FBA1B4FBEBA0013A768 /* MusicTypeCell.m */,
 				C2E42FD31B4FE98C0013A768 /* HeaderCell.h */,
